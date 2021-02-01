@@ -47,6 +47,6 @@ reddit_urls = ["bitcoin",
 
 if __name__ == '__main__':
     pool = Pool(process_count=cpu_count())
-    telegram_crawler = pool.map(TelegramStreamEngine, telegramurls)
+    telegram_crawler = TelegramStreamEngine(telegramurls)
     twitter_crawler = pool.map(TwitterEngine().parser, twitter_urls)
     reddit_crawler = pool.map(RedditEngine.parser, reddit_urls)
