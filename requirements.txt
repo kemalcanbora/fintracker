@@ -1,0 +1,6 @@
+googletrans==4.0.0-rc1
+pydantic==1.6.1
+langdetect==1.0.8
+Telethon==1.19.1
+praw==7.1.0
+tweepy==3.10.0
